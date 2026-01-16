@@ -1,0 +1,121 @@
+
+
+/* Container & Layout */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+h2 { 
+    color: #2c3e50; 
+    text-align: center; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px; 
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.form-row label {
+    width: 180px;
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Buttons Styling */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Individual Button Colors */
+.actions button:nth-child(1) { background-color: #27ae60; color: white; } /* Save */
+.actions button:nth-child(2) { background-color: #3498db; color: white; } /* Update */
+.actions button:nth-child(3) { background-color: #e74c3c; color: white; } /* Delete */
+.actions button:nth-child(4) { background-color: #f39c12; color: white; } /* Cancel */
+
+button:hover { opacity: 0.8; }
+
+button:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th { background-color: #5c9fcc; color: white; }
+
+/* Highlight for Selected Row */
+.selected {
+  background-color: #d1ecf1 !important; 
+  color: #0c5460 !important;
+  font-weight: bold;
+}
+
+tr:hover:not(.selected) { background-color: #f1f1f1; }
+
+.avg-salary {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: right;
+}
